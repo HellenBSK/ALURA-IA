@@ -6,39 +6,74 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "quais suas maiores habilidades?",
+        enunciado: "Em que área está suas maiores habilidades?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto: "humanas",
+                afirmacao: "gosta das ciências que envolvem sociedade, cultura, história."
+            },
+            {
+                texto: "exatas",
+                afirmacao: "gosta das ciências de lógica, matemática, fórmulas."
+            }
         ]
     },
     {
-        enunciado: "Pergunta 2",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+        enunciado: "Você prefere trabalhar:",
+        alternativas: [{
+                texto: "Com pessoas, ajudando, ensinando ou orientando",
+                afirmacao: "tem mais habilidades sociais e de comunicação"
+            },
+            {
+                texto: "Com coisas, dados ou sistemas, resolvendo problemas técnicos",
+                afirmacao: "tem mais habilidades lógicas, de experimentos e matemática"
+            }
+            
+            
         ]
     },
     {
-        enunciado: "Pergunta 3",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+        enunciado: "Em um dia ideal de trabalho, você gostaria mais de:",
+        alternativas: [{
+                texto: "Ter variedade, contato humano e dinamicidade",
+                afirmacao: "há maior aptidão para disciplinas como geografia, filosofia, história, psicologia, etc"
+            },
+            {
+                texto: " Focar em tarefas objetivas, com rotina e concentração",
+                afirmacao: "há maior aptidão para disciplinas como química, física, computação, estatística"
+            }
+            
+            
         ]
     },
     {
-        enunciado: "Pergunta 4",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+        enunciado: "Você se sente mais satisfeito quando:",
+        alternativas: [{
+                texto:  "Vê o impacto direto do seu trabalho na vida de alguém",
+                afirmacao: "se importa com questões sociais, políticas e éticas"
+            },
+            {
+                texto: "Consegue solucionar algo complexo ou construir algo eficiente",
+                afirmacao: "quer estudar fenômenos por meio de números e cálculos"
+            }
+            
+           
+            
         ]
     },
     {
-        enunciado: "Pergunta 5",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
-        ]
+        enunciado: "O que mais te atrai em uma profissão:",
+        alternativas: [{
+                texto:   "Sentir propósito e conexão com os outros",
+                afirmacao: "quer entender melhor a si mesmo e aos outros"
+            },
+            {
+                texto:  "Desafios intelectuais e reconhecimento técnico",
+                afirmacao: "quer analisar problemas, seguir etapas lógicas e trabalhar com conceitos"
+            }
+           ] 
+           
+           
     }
 ];
 let atual = 0;
